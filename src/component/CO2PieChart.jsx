@@ -12,9 +12,9 @@ export default class MyPieChart extends Component {
     if (co2 === undefined) return <p>There is no data.</p>;
 
     const dataPieChart = [
-      { name: "Gas Fuel", value: parseInt(co2["Gas Fuel"]) },
-      { name: "Liquid Fuel", value: co2["Liquid Fuel"] },
-      { name: "Solid Fuel", value: co2["Solid Fuel"] },
+      { name: "Gas bränsle", value: parseInt(co2["Gas Fuel"]) },
+      { name: "Flytande bränsle", value: co2["Liquid Fuel"] },
+      { name: "Fast bränsle", value: co2["Solid Fuel"] },
       { name: "Cement", value: co2["Cement"] }
     ];
     const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#BB8042"];
@@ -26,7 +26,7 @@ export default class MyPieChart extends Component {
           onClick={() => this.props.history.push("/co2list")}
         >
           {" "}
-          BACK{" "}
+          TILLBAKA{" "}
         </button>
         <div style={{ width: "650px", height: "600px", float: "left" }}>
           <PieChart width={650} height={600}>

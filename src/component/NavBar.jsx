@@ -7,7 +7,7 @@ class NavBar extends Component {
     return (
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <Link class="navbar-brand" to="/">
-          Climate Change
+          Klimatförändringar
         </Link>
         <button
           class="navbar-toggler"
@@ -24,27 +24,27 @@ class NavBar extends Component {
           <ul class="navbar-nav">
             <li class="nav-item">
               <Link class="nav-link" to="/co2">
-                CO2 <span class="sr-only">(current)</span>
+                Koldioxid <span class="sr-only">(current)</span>
               </Link>
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/globaltemp">
-                Global Temp
+                Global Temperatur
               </Link>
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/glaciersize">
-                Glacier Size
+                Glaciär Storlek
               </Link>
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/sealevel">
-                Sea Level
+                Havsyta
               </Link>
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/co2list">
-                CO2 List
+                CO2 Lista
               </Link>
             </li>
           </ul>

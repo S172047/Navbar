@@ -15,7 +15,7 @@ class Temperature extends Component {
     return (
       <React.Fragment>
         <p style={{ fontSize: "24px", fontWeight: "bold" }}>
-          Global Temprature
+          Global Temperatur
         </p>
         <LineChart
           width={1400}

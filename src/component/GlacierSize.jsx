@@ -15,7 +15,7 @@ class GlacierSize extends Component {
     return (
       <React.Fragment>
         <p style={{ fontSize: "24px", fontWeight: "bold" }}>
-          Glaciers Size (meters of water equivalent - Base Year 1945)
+          Glaciär storlek (ismeter i motsvarande vattenvolym - Bas År 1945)
         </p>
         <LineChart
           width={1400}
