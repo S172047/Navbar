@@ -4,7 +4,8 @@ import { getCO2Emissionsdata } from "../data/CO2Emission";
 import { getGlobalTempdata } from "../data/GlobalTemp";
 import { getGlacierSizedata } from "../data/GlacierSize";
 import { getSeaLeveldata } from "../data/SeaLevel";
-import { getGlacierSeadata} from "../data/CO2Emission";
+import { getGlacierSeadata} from "../data/GlacierSea";
+
 
 import CO2Emission from "./CO2Emission";
 import Temperature from "./Temperature";
