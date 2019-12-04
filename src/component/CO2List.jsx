@@ -31,9 +31,9 @@ class CO2List extends Component {
               <td>{co2["Total"]}</td>
               <td>{co2["Gas Fuel"]}</td>
               <td>{co2["Liquid Fuel"]}</td>
+              <td>{co2["Solid Fuel"]}</td>
               <td>{co2["Cement"]}</td>
               <td>{co2["Gas Flaring"]}</td>
-              <td>{co2["Gas Fuel"]}</td>
               <td>{co2["Per Capita"]}</td>
             </tr>
           ))}

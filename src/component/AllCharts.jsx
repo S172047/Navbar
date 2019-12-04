@@ -116,6 +116,7 @@ export default class AllCharts extends Component {
 
           <Route path="/notfound" component={NotFound} />
           <Redirect from="/" exact to="/co2"></Redirect>
+          <Redirect from = "/Navbar" to="/co2"></Redirect>
           <Redirect to="/notfound" />
         </Switch>
       </React.Fragment>
