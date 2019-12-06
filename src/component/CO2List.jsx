@@ -6,20 +6,20 @@ class CO2List extends Component {
     CO2EmissionData = CO2EmissionData.sort((a, b) =>
       a.Year < b.Year ? 1 : b.Year < a.Year ? -1 : 0
     );
-    if (CO2EmissionData.length === 0) return <p>Det finns ingen data</p>;
+    if (CO2EmissionData.length === 0) return <p>There is not data</p>;
 
     return (
       <table className="ui single line table">
         <thead>
           <tr>
-            <th>Å<img src="" alt="" sizes="" srcset=""/></th>
+            <th>Year</th>
             <th>Total</th>
-            <th>Gas bränsle</th>
-            <th>Flytande bränsle</th>
-            <th>Fast bränsle</th>
+            <th>Gas Fuel</th>
+            <th>Liquid Fuel</th>
+            <th>Solid Fuel</th>
             <th>Cement</th>
-            <th>Brinnande gas</th>
-            <th>Per Invånare</th>
+            <th>Gas Flaring</th>
+            <th>Per Capita</th>
           </tr>
         </thead>
         <tbody>
@@ -31,9 +31,9 @@ class CO2List extends Component {
               <td>{co2["Total"]}</td>
               <td>{co2["Gas Fuel"]}</td>
               <td>{co2["Liquid Fuel"]}</td>
-              <td>{co2["Solid Fuel"]}</td>
               <td>{co2["Cement"]}</td>
               <td>{co2["Gas Flaring"]}</td>
+              <td>{co2["Gas Fuel"]}</td>
               <td>{co2["Per Capita"]}</td>
             </tr>
           ))}

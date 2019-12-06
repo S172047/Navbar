@@ -4,7 +4,7 @@ import { getCO2Emissionsdata } from "../data/CO2Emission";
 import { getGlobalTempdata } from "../data/GlobalTemp";
 import { getGlacierSizedata } from "../data/GlacierSize";
 import { getSeaLeveldata } from "../data/SeaLevel";
-import { getGlacierSeadata} from "../data/GlacierSea";
+//import { getGlacierSeadata} from "../data/GlacierSea";
 
 
 import CO2Emission from "./CO2Emission";
@@ -15,7 +15,7 @@ import CO2List from "./CO2List";
 import NavBar from "./NavBar";
 import NotFound from "./NotFound";
 import CO2PieChart from "./CO2PieChart";
-import GlacierSea from "./GlacierSea";
+//import GlacierSea from "./GlacierSea";
 import { Route, Switch, Redirect } from "react-router-dom";
 
 export default class AllCharts extends Component {
@@ -60,7 +60,7 @@ export default class AllCharts extends Component {
       ),
       GlacierSize: getGlacierSizedata(),
       SeaLevel: getSeaLeveldata(),
-      GlacierSea: getGlacierSeadata()
+      //GlacierSea: getGlacierSeadata()
     });
 
     console.log(this.state.CO2Emission);
@@ -107,11 +107,7 @@ export default class AllCharts extends Component {
               <CO2List {...props} CO2data={this.state.CO2Emission} />
             )}
           />
-            <Route
-            path="/glaciersea"
-            render={props => (
-              <GlacierSea {...props} GlacierSeaData={this.state.GlacierSea} />
-            )}
+         
           />
 
           <Route path="/notfound" component={NotFound} />
@@ -123,3 +119,9 @@ export default class AllCharts extends Component {
     );
   }
 }
+
+//<Route
+//path="/glaciersea"
+//render={props => (
+ // <GlacierSea {...props} GlacierSeaData={this.state.GlacierSea} />
+//)}

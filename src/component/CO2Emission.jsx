@@ -15,7 +15,7 @@ class CO2Emission extends Component {
     return (
       <React.Fragment>
         <p style={{ fontSize: "24px", fontWeight: "bold" }}>
-          Koldioxid utsläpp (miljoner ton)
+          CO2 Emission (million metric tons)
         </p>
         <LineChart
           width={1400}

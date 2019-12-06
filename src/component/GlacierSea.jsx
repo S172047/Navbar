@@ -91,10 +91,9 @@ class GlacierSea extends Component {
             stroke={s.color}
 
           />
+          );
 
-          ))}
-
-          </LineChart>
+        </Line>
           </React.Fragment>
         );
       }
