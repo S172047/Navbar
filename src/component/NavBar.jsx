@@ -48,7 +48,7 @@ class NavBar extends Component {
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/co2">
+              <Link class="nav-link" to="/GlacierSea">
                 Glacier Size/Sea Level
               </Link>
             </li>

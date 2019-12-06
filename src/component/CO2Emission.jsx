@@ -40,11 +40,11 @@ class CO2Emission extends Component {
             stroke="#8884d8"
             activeDot={{ r: 8 }}
           />
-          <Line type="monotone" dataKey="Gas Fuel" stroke="#82ca9d" />
-          <Line type="monotone" dataKey="Liquid Fuel" stroke="orange" />
-          <Line type="monotone" dataKey="Solid Fuel" stroke="blue" />
+          <Line type="monotone" dataKey="Gas Fuel" name="Gasbränsle" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="Liquid Fuel" name="Flytande bränsle" stroke="orange" />
+          <Line type="monotone" dataKey="Solid Fuel" name= "Fast bränsle" stroke="blue" />
           <Line type="monotone" dataKey="Cement" stroke="black" />
-          <Line type="monotone" dataKey="Gas Flaring" stroke="maroon" />
+          <Line type="monotone" dataKey="Gas Flaring" name="Gas fackling" stroke="maroon" />
         </LineChart>
       </React.Fragment>
     );

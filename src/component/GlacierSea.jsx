@@ -18,13 +18,13 @@ class GlacierSea extends Component {
 
       let series = [
         {
-          name: "Glacier Data",
+          name: "Glaciär data",
           data: [],
           color: "green"
         },
 
         {
-          name: "Sea Level Data",
+          name: "Havsnivå",
           data: [],
           color: "blue"
         }
@@ -76,24 +76,15 @@ class GlacierSea extends Component {
             type="monotone"
             dataKey="value"
             data={s.data}
-            name="Glacier"
+            name={s.name}
             key={s.name}
             stroke={s.color}
             activeDot={{ r: 8 }}
           />
+          ))};
 
-          <Line
-          type="monotone"
-            dataKey="value"
-            data={s.data}
-            name="Sea Level"
-            key={s.name}
-            stroke={s.color}
-
-          />
-          );
-
-        </Line>
+        </LineChart>
+        
           </React.Fragment>
         );
       }
